@@ -1,0 +1,971 @@
+-- DexHoney
+-- april 1st version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 15 | Scripts: 0 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.007y7z.PlayerGui.ScreenGui
+local TargetParent = game:GetService("CoreGui") or game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui")
+LMG2L["ScreenGui_1"].Name = "DexHoney_HighPriority"
+LMG2L["ScreenGui_1"].Parent = TargetParent
+
+LMG2L["ScreenGui_1"]["DisplayOrder"] = 2147483647
+LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = true 
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false
+LMG2L["ScreenGui_1"]["DisplayOrder"] = 999999999;
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 364, 0, 22);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 378, 0, 10);
+
+LMG2L["Shadow"] = Instance.new("ImageLabel", LMG2L["Frame_2"])
+LMG2L["Shadow"]["Name"] = "Shadow"
+LMG2L["Shadow"]["BackgroundTransparency"] = 1.5
+LMG2L["Shadow"]["BorderSizePixel"] = 0
+LMG2L["Shadow"]["Image"] = "rbxassetid://1427967925"
+LMG2L["Shadow"]["ScaleType"] = Enum.ScaleType.Slice
+LMG2L["Shadow"]["SliceCenter"] = Rect.new(6,6,25,25)
+
+LMG2L["Shadow"]["Size"] = UDim2.new(1, 10, 0, 22 + 390 + 10)
+LMG2L["Shadow"]["Position"] = UDim2.new(0, -5, 0, -5)
+
+LMG2L["Shadow"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+LMG2L["Shadow"]["ImageTransparency"] = 0.3
+LMG2L["Shadow"].ZIndex = 0
+LMG2L["Frame_2"].ZIndex = 1
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_3"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_3"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_3"]["TextSize"] = 9;
+LMG2L["TextLabel_3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_3"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_3"]["Size"] = UDim2.new(0, 64, 0, 22);
+LMG2L["TextLabel_3"]["Text"] = [[DexHoney]];
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.TextButton
+LMG2L["TextButton_4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["TextButton_4"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_4"]["TextSize"] = 21;
+LMG2L["TextButton_4"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+LMG2L["TextButton_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_4"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_4"]["Size"] = UDim2.new(0, 24, 0, 22);
+LMG2L["TextButton_4"]["Text"] = [[X]];
+LMG2L["TextButton_4"]["Position"] = UDim2.new(0, 340, 0, 0);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.TextButton
+LMG2L["TextButton_5"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["TextButton_5"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_5"]["TextSize"] = 21;
+LMG2L["TextButton_5"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+LMG2L["TextButton_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_5"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_5"]["Size"] = UDim2.new(0, 20, 0, 22);
+LMG2L["TextButton_5"]["Text"] = [[–]];
+LMG2L["TextButton_5"]["Position"] = UDim2.new(0, 318, 0, 0);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame
+LMG2L["Frame_6"] = Instance.new("Frame", LMG2L["Frame_2"]);
+LMG2L["Frame_6"]["BorderSizePixel"] = 0;
+LMG2L["Frame_6"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+LMG2L["Frame_6"]["Size"] = UDim2.new(0, 364, 0, 390);
+LMG2L["Frame_6"]["Position"] = UDim2.new(0, 0, 0, 22);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.ImageLabel
+LMG2L["ImageLabel_7"] = Instance.new("ImageLabel", LMG2L["Frame_6"]);
+LMG2L["ImageLabel_7"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_7"]["ImageContent"] = ;
+LMG2L["ImageLabel_7"]["Image"] = [[rbxassetid://81623568673658]];
+LMG2L["ImageLabel_7"]["Size"] = UDim2.new(0, 46, 0, 46);
+LMG2L["ImageLabel_7"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_7"]["Position"] = UDim2.new(0, 148, 0, 6);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_8"] = Instance.new("TextLabel", LMG2L["Frame_6"]);
+LMG2L["TextLabel_8"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_8"]["TextSize"] = 18;
+LMG2L["TextLabel_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_8"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_8"]["Size"] = UDim2.new(0.2, 0, 0.3, 0);
+LMG2L["TextLabel_8"]["Text"] = [[Welcome to Dex, Honey]];
+LMG2L["TextLabel_8"]["Position"] = UDim2.new(0, 136, 0, 12);
+LMG2L["TextLabel_8"]["FontFace"] = Font.new(
+    "rbxasset://fonts/families/SourceSansPro.json",
+    Enum.FontWeight.Bold,
+    Enum.FontStyle.Normal
+)
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_9"] = Instance.new("TextLabel", LMG2L["Frame_6"]);
+LMG2L["TextLabel_9"]["TextWrapped"] = true;
+LMG2L["TextLabel_9"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_9"]["TextSize"] = 15;
+LMG2L["TextLabel_9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextLabel_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["TextDirection"] = Enum.TextDirection.LeftToRight;
+LMG2L["TextLabel_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_9"]["Size"] = UDim2.new(0, 363, 0, 60);
+LMG2L["TextLabel_9"]["Text"] = [[Dex Honey is the result of a partnership with the Secret Service and PayPal Inc. Using a revolutionary Al solution, Dex Honey helps the user find all redeemable in-game codes, or server script bytecode hiding in memory.]];
+LMG2L["TextLabel_9"]["Position"] = UDim2.new(0, 0, 0, 86);
+LMG2L["TextLabel_9"]["FontFace"] = Font.new(
+    "rbxasset://fonts/families/SourceSansPro.json",
+    Enum.FontWeight.Bold,
+    Enum.FontStyle.Normal
+)
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.ImageLabel
+
+LMG2L["GifFrame"] = Instance.new("Frame", LMG2L["Frame_6"]);
+LMG2L["GifFrame"]["Name"] = "GifFrame";
+LMG2L["GifFrame"]["BorderSizePixel"] = 0;
+LMG2L["GifFrame"]["BackgroundTransparency"] = 1;
+LMG2L["GifFrame"]["ClipsDescendants"] = true;
+LMG2L["GifFrame"]["Size"] = UDim2.new(0, 198, 0, 196); 
+LMG2L["GifFrame"]["Position"] = UDim2.new(0, 74, 0, 106);
+
+LMG2L["SphImg"] = Instance.new("ImageLabel", LMG2L["GifFrame"]);
+LMG2L["SphImg"]["Name"] = "SphImg";
+LMG2L["SphImg"]["BorderSizePixel"] = 0;
+LMG2L["SphImg"]["BackgroundTransparency"] = 1;
+LMG2L["SphImg"]["Size"] = UDim2.new(6, 0, 7, 0);     
+LMG2L["SphImg"]["Position"] = UDim2.new(0, 0, 0, 0);
+LMG2L["SphImg"]["Image"] = "rbxassetid://122127867551155"; 
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextButton
+LMG2L["TextButton_b"] = Instance.new("TextButton", LMG2L["Frame_6"]);
+LMG2L["TextButton_b"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_b"]["TextSize"] = 18;
+LMG2L["TextButton_b"]["TextDirection"] = Enum.TextDirection.LeftToRight;
+LMG2L["TextButton_b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_b"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+LMG2L["TextButton_b"]["FontFace"] = Font.new(
+    "rbxasset://fonts/families/SourceSansPro.json",
+    Enum.FontWeight.Bold,
+    Enum.FontStyle.Normal
+)
+LMG2L["TextButton_b"]["Size"] = UDim2.new(0, 220, 0, 32);
+LMG2L["TextButton_b"]["Text"] = [[Find In-Game Codes]];
+LMG2L["TextButton_b"]["Position"] = UDim2.new(0, 58, 0, 284);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_c"] = Instance.new("UICorner", LMG2L["TextButton_b"]);
+
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextButton
+LMG2L["TextButton_d"] = Instance.new("TextButton", LMG2L["Frame_6"]);
+LMG2L["TextButton_d"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_d"]["TextSize"] = 18;
+LMG2L["TextButton_d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_d"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+LMG2L["TextButton_d"]["FontFace"] = Font.new(
+    "rbxasset://fonts/families/SourceSansPro.json",
+    Enum.FontWeight.Bold,
+    Enum.FontStyle.Normal
+)
+LMG2L["TextButton_d"]["Size"] = UDim2.new(0, 220, 0, 32);
+LMG2L["TextButton_d"]["Text"] = [[Find Server Script ByteCode]];
+LMG2L["TextButton_d"]["Position"] = UDim2.new(0, 58, 0, 326);
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.Frame.TextButton.UICorner
+LMG2L["UICorner_e"] = Instance.new("UICorner", LMG2L["TextButton_d"]);
+
+
+
+-- Players.007y7z.PlayerGui.ScreenGui.Frame.UIDragDetector
+LMG2L["UIDragDetector_f"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);  
+local statusLabel = Instance.new("TextLabel", LMG2L["Frame_6"])  
+statusLabel.Name = "StatusLabel"  
+statusLabel.BackgroundTransparency = 1  
+statusLabel.TextColor3 = Color3.fromRGB(255, 255, 255)  
+statusLabel.TextSize = 18  
+statusLabel.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold)  
+statusLabel.Size = UDim2.new(0, 320, 0, 30)  
+statusLabel.Position = UDim2.new(0, 22, 0, 288)  
+statusLabel.Text = ""  
+statusLabel.Visible = false
+  
+local processLabel = Instance.new("TextLabel", LMG2L["Frame_6"])  
+processLabel.Name = "ProcessLabel"  
+processLabel.BackgroundTransparency = 1  
+processLabel.TextColor3 = Color3.fromRGB(255, 255, 255)  
+processLabel.TextSize = 18  
+processLabel.TextWrapped = true  
+processLabel.TextYAlignment = Enum.TextYAlignment.Top  
+processLabel.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold)  
+processLabel.Size = UDim2.new(0, 320, 0, 80)  
+processLabel.Position = UDim2.new(0, 22, 0, 318)  
+processLabel.Text = ""  
+processLabel.Visible = false
+  
+local homeButton = Instance.new("TextButton", LMG2L["Frame_6"])  
+homeButton.Name = "HomeButton"  
+homeButton.Visible = false  
+homeButton.Text = "Back To Home"  
+homeButton.Size = UDim2.new(0, 180, 0, 32)  
+homeButton.Position = UDim2.new(0, 180, 0, 350)  
+homeButton.BackgroundColor3 = Color3.fromRGB(0, 171, 255)  
+homeButton.TextColor3 = Color3.fromRGB(255,255,255)  
+homeButton.TextSize = 18  
+homeButton.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold)  
+Instance.new("UICorner", homeButton)
+local autoRedeemButton = Instance.new("TextButton", LMG2L["Frame_6"])  
+autoRedeemButton.Name = "AutoRedeemButton"  
+autoRedeemButton.Visible = false  
+autoRedeemButton.Text = "Auto Redeem"  
+autoRedeemButton.Size = UDim2.new(0, 160, 0, 32)  
+autoRedeemButton.Position = UDim2.new(0, 10, 0, 350)  
+autoRedeemButton.BackgroundColor3 = Color3.fromRGB(0, 171, 255)  
+autoRedeemButton.TextColor3 = Color3.fromRGB(255,255,255)  
+autoRedeemButton.TextSize = 18  
+autoRedeemButton.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold)  
+Instance.new("UICorner", autoRedeemButton)
+local clipFrame = Instance.new("Frame")
+clipFrame.Name = "ClipFrame"
+clipFrame.Parent = LMG2L["Frame_2"]
+clipFrame.BorderSizePixel = 0
+clipFrame.BackgroundTransparency = 1
+clipFrame.ClipsDescendants = true
+clipFrame.Size = UDim2.new(0, 364, 0, 390)
+clipFrame.Position = UDim2.new(0, 0, 0, 22)
+clipFrame.ZIndex = 1
+
+LMG2L["Frame_6"].Parent = clipFrame
+LMG2L["Frame_6"].Position = UDim2.new(0, 0, 0, 0)
+LMG2L["Frame_6"].ZIndex = 2
+
+LMG2L["Shadow"].Parent = LMG2L["Frame_2"]
+LMG2L["Shadow"].ZIndex = 0
+
+local SHADOW_OPEN_SIZE = UDim2.new(0, 364 + 10, 0, 22 + 390 + 10)
+local SHADOW_CLOSED_SIZE = UDim2.new(0, 364 + 10, 0, 22 + 10)
+
+local CLOSED_ICON = "rbxassetid://93001475799439"
+local minIcon = Instance.new("ImageLabel")
+minIcon.Name = "Icon"
+minIcon.Parent = LMG2L["TextButton_5"]
+minIcon.BackgroundTransparency = 1
+minIcon.Image = CLOSED_ICON
+minIcon.Size = UDim2.new(0, 29, 0, 29)
+minIcon.Position = UDim2.new(0.3, -9, 0.3, -8)
+minIcon.ImageColor3 = Color3.fromRGB(207, 207, 207)
+minIcon.Visible = false
+LMG2L["TextButton_5"].Text = "–"
+
+local WELCOME_BUTTONS = {
+	["TextButton_b"] = true,
+	["TextButton_d"] = true, 
+	["TextLabel_8"] = true,
+	["TextLabel_9"] = true, 
+	["ImageLabel_7"] = true
+}
+
+local function isProcessingScreen()
+	return (statusLabel and statusLabel.Visible) or (processLabel and processLabel.Visible)
+end
+
+local function isProcessingDone()
+	if not homeButton then return false end
+	if homeButton.Visible then return true end
+	
+	if processLabel and processLabel.Visible then
+		local text = processLabel.Text or ""
+		if text:find("April Fools") or text:find("Complete!") or text:find("0 codes") or text:find("0 ServerScripts") then
+			return true
+		end
+	end
+	
+	return false
+end
+
+local function isWelcomeElement(obj)
+	return WELCOME_BUTTONS[obj.Name] == true
+end
+
+local function isProcessingScreen()
+	local statusVisible = statusLabel and statusLabel.Visible and statusLabel.Text ~= ""
+	local processVisible = processLabel and processLabel.Visible and processLabel.Text ~= ""
+	return statusVisible or processVisible
+end
+
+local function isProcessingDone()
+	if not homeButton then return false end
+	if homeButton.Visible then return true end
+	
+	if processLabel and processLabel.Visible then
+		local text = processLabel.Text or ""
+		if text:find("April Fools") or text:find("Complete!") or text:find("0 codes") or text:find("0 ServerScripts") then
+			return true
+		end
+	end
+	
+	return false
+end
+
+local function isWelcomeElement(obj)
+	return WELCOME_BUTTONS[obj.Name] == true
+end
+
+local function setWelcomeButtonsVisible(visible)
+	local elements = {
+		LMG2L["TextButton_b"],
+		LMG2L["TextButton_d"],
+		LMG2L["TextLabel_8"],
+		LMG2L["TextLabel_9"],
+		LMG2L["ImageLabel_7"] 
+	}
+	for _, element in ipairs(elements) do
+		if element then element.Visible = visible end
+	end
+end
+
+local function isProcessingScreen()
+	local hasStatus = statusLabel and statusLabel.Text ~= ""
+	local hasProcess = processLabel and processLabel.Text ~= ""
+	return hasStatus or hasProcess
+end
+
+local function C_minimize()
+    local button = LMG2L["TextButton_5"]
+    local icon = button:FindFirstChild("Icon")
+    local mainFrame = LMG2L["Frame_6"]
+    local shadow = LMG2L["Shadow"]
+    local isAnimating = false
+    
+    local OPEN_SIZE = UDim2.new(0, 364, 0, 390)
+    local CLOSED_SIZE = UDim2.new(0, 364, 0, 0)
+    
+    local originalPositions = {}
+    for _, child in pairs(mainFrame:GetDescendants()) do
+        if child:IsA("GuiObject") then
+            originalPositions[child] = child.Position
+        end
+    end
+
+    local function updateFrames(isOpening)
+        if isAnimating then return end
+        isAnimating = true
+        
+        if isOpening then
+            button.Text = "–"
+            if icon then icon.Visible = false end
+            mainFrame.Visible = true
+            
+            local statusAtivo = (statusLabel.Text ~= "" or processLabel.Text ~= "")
+            
+            if not statusAtivo then
+                LMG2L["TextLabel_8"].Visible = true
+                LMG2L["TextLabel_9"].Visible = true
+                LMG2L["TextButton_b"].Visible = true
+                LMG2L["TextButton_d"].Visible = true
+                LMG2L["ImageLabel_7"].Visible = true
+                
+                statusLabel.Visible = false
+                processLabel.Visible = false
+            else
+                LMG2L["TextLabel_8"].Visible = true
+                LMG2L["TextLabel_9"].Visible = true
+                LMG2L["TextButton_b"].Visible = false
+                LMG2L["TextButton_d"].Visible = false
+                statusLabel.Visible = (homeButton.Visible == false)
+                processLabel.Visible = true
+            end
+
+            for _, child in pairs(mainFrame:GetDescendants()) do
+                if child:IsA("GuiObject") and originalPositions[child] then
+                    local targetPos = originalPositions[child]
+                    child.Position = UDim2.new(targetPos.X.Scale, targetPos.X.Offset, targetPos.Y.Scale, targetPos.Y.Offset - 400)
+                    child:TweenPosition(targetPos, "Out", "Quart", 0.25, true)
+                end
+            end
+            
+            mainFrame:TweenSize(OPEN_SIZE, "Out", "Quart", 0.25, true)
+            shadow:TweenSize(SHADOW_OPEN_SIZE, "Out", "Quart", 0.25, true)
+        else
+            for _, child in pairs(mainFrame:GetDescendants()) do
+                if child:IsA("GuiObject") and originalPositions[child] then
+                    local currentPos = child.Position
+                    local closedPos = UDim2.new(currentPos.X.Scale, currentPos.X.Offset, currentPos.Y.Scale, currentPos.Y.Offset - 400)
+                    child:TweenPosition(closedPos, "Out", "Quart", 0.25, true)
+                end
+            end
+            
+            mainFrame:TweenSize(CLOSED_SIZE, "Out", "Quart", 0.25, true)
+            shadow:TweenSize(SHADOW_CLOSED_SIZE, "Out", "Quart", 0.25, true)
+            
+            task.delay(0.25, function()
+                if button.Text == "" then 
+                    mainFrame.Visible = false 
+                end
+            end)
+            
+            button.Text = ""
+            if icon then icon.Visible = true end
+        end
+        
+        task.wait(0.3)
+        isAnimating = false
+    end
+    
+    button.MouseButton1Click:Connect(function()
+        updateFrames(button.Text == "")
+    end)
+end
+task.spawn(C_minimize)
+
+
+local function C_close()
+	local button = LMG2L["TextButton_4"]
+	local mainFrame = LMG2L["Frame_6"]
+	local shadow = LMG2L["Shadow"]
+	local topbar = LMG2L["Frame_2"]
+	local textLabel = LMG2L["TextLabel_3"]
+	local closeBtn = LMG2L["TextButton_4"]
+	local minBtn = LMG2L["TextButton_5"]
+	local screenGui = LMG2L["ScreenGui_1"]
+	
+	local CLOSED_SIZE = UDim2.new(0, 364, 0, 0)
+	
+	local originalPositions = {}
+	
+	local function saveOriginalStates()
+		for _, child in pairs(mainFrame:GetDescendants()) do
+			if child:IsA("GuiObject") then
+				originalPositions[child] = child.Position
+			end
+		end
+	end
+	
+	saveOriginalStates()
+	
+	local function fadeOutAndDestroy()
+		local tweenService = game:GetService("TweenService")
+		local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		
+		local tweens = {}
+		
+		table.insert(tweens, tweenService:Create(topbar, tweenInfo, {BackgroundTransparency = 1}))
+		table.insert(tweens, tweenService:Create(textLabel, tweenInfo, {TextTransparency = 1}))
+		table.insert(tweens, tweenService:Create(closeBtn, tweenInfo, {TextTransparency = 1}))
+		
+		local minIcon = minBtn:FindFirstChild("Icon")
+		if minIcon and minIcon.Visible then
+			table.insert(tweens, tweenService:Create(minIcon, tweenInfo, {ImageTransparency = 1}))
+		end
+		
+		table.insert(tweens, tweenService:Create(shadow, tweenInfo, {ImageTransparency = 1}))
+		
+		for _, tween in ipairs(tweens) do
+			tween:Play()
+		end
+		
+		task.wait(0.5)
+		screenGui:Destroy()
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		for _, child in pairs(mainFrame:GetDescendants()) do
+			if child:IsA("GuiObject") and originalPositions[child] then
+				local currentPos = originalPositions[child]
+				local closedPos = UDim2.new(currentPos.X.Scale, currentPos.X.Offset, currentPos.Y.Scale, currentPos.Y.Offset - 400)
+				child:TweenPosition(closedPos, "Out", "Quart", 0.25, true)
+			end
+		end
+		
+		mainFrame:TweenSize(CLOSED_SIZE, "Out", "Quart", 0.25, true)
+		shadow:TweenSize(SHADOW_CLOSED_SIZE, "Out", "Quart", 0.25, true)
+		
+		task.wait(0.25)
+		mainFrame.Visible = false
+		fadeOutAndDestroy()
+	end)
+end
+task.spawn(C_close)
+
+local gifFrame = LMG2L["GifFrame"]    
+local sphImg = LMG2L["SphImg"]    
+local currentPlaying = "sS1"    
+local gifLooping = true    
+local t = tick()    
+local lastFrame = 1    
+local frameRate = 30
+local isAprilFools = false
+local cutFrames = 4
+    
+local framesTable = {    
+	sS1 = {rows = 7, columns = 6, total = 38},    
+	sS2 = {rows = 6, columns = 4, total = 24},    
+}    
+local spritesheetTable = {    
+	sS1 = "rbxassetid://122127867551155",    
+	sS2 = "rbxassetid://88547939011612",    
+}    
+
+local function aprilFoolsEffect()    
+	isAprilFools = true  
+	sphImg.Image = "rbxassetid://124555044517922"    
+	sphImg.Size = UDim2.new(6, 0, 5, 0)    
+	gifFrame.Position = UDim2.new(0, 0, 0, 130)    
+	sphImg.Position = UDim2.new(0, 6, 5, 0)    
+	processLabel.Position = UDim2.new(0, -75, 0, 330)
+	processLabel.Size = UDim2.new(0, 340, 0, 80)
+end 
+
+local function gifAnim()  
+	local timePerFrame = 1 / frameRate  
+	local now = tick()  
+	if now - t >= timePerFrame then  
+		t = now  
+		local total = framesTable[currentPlaying].total  
+		local columns = framesTable[currentPlaying].columns  
+		local maxFrame = isAprilFools and (total - cutFrames) or total
+		lastFrame += 1  
+		if lastFrame > maxFrame then  
+			lastFrame = 1  
+			sphImg.Position = UDim2.new(0, 0, 0, 0)  
+			return  
+		end  
+		local col = ((lastFrame - 1) % columns) + 1  
+		local row = math.floor((lastFrame - 1) / columns) + 1  
+		sphImg.Position = UDim2.new(-(col - 1), 0, -(row - 1), 0)  
+	end  
+end  
+    
+task.spawn(function()    
+	while task.wait() do    
+		if gifLooping then gifAnim() end    
+	end    
+end)    
+
+local defaultProcessPosition = processLabel.Position
+local defaultProcessSize = processLabel.Size
+ 
+homeButton.MouseButton1Click:Connect(function()    
+	isAprilFools = false  
+	LMG2L["TextLabel_8"].Text = "Welcome to Dex, Honey"    
+	LMG2L["TextLabel_9"].Text = "Dex Honey is the result of a partnership with the Secret Service and PayPal Inc. Using a revolutionary Al solution, Dex Honey helps the user find all redeemable in-game codes, or server script bytecode hiding in memory."    
+	LMG2L["TextButton_b"].Visible = true    
+	LMG2L["TextButton_d"].Visible = true    
+	statusLabel.Text = ""    
+	statusLabel.Visible = false
+	processLabel.Text = ""    
+	processLabel.Visible = false    
+	homeButton.Visible = false    
+	autoRedeemButton.Visible = false
+   processLabel.Position = defaultProcessPosition
+	processLabel.Size = defaultProcessSize
+	currentPlaying = "sS1"    
+	sphImg.Image = spritesheetTable.sS1    
+	sphImg.Size = UDim2.new(6, 0, 7, 0)    
+	sphImg.Position = UDim2.new(0,0,0,0)    
+	gifFrame.Size = UDim2.new(0, 198, 0, 196)    
+	gifFrame.Position = UDim2.new(0, 74, 0, 106)    
+end)
+
+  
+LMG2L["TextButton_d"].MouseButton1Click:Connect(function()      
+	isAprilFools = false  
+	processLabel.Position = defaultProcessPosition
+	processLabel.Size = defaultProcessSize
+	LMG2L["TextButton_b"].Visible = false      
+	LMG2L["TextButton_d"].Visible = false      
+	LMG2L["TextLabel_8"].Text = "Finding Server Scripts Bytecode"      
+	LMG2L["TextLabel_9"].Text = "We will now retrieve a certain amount of available server memory using our 0day memory reading method before processing it with our AI engine to find traces of server script bytecode."      
+	statusLabel.Visible = true      
+	processLabel.Visible = true      
+	currentPlaying = "sS2"      
+	sphImg.Image = spritesheetTable.sS2      
+	sphImg.Size = UDim2.new(4, 0, 6, 0)      
+	gifFrame.Position = UDim2.new(0, 74, 0, 130)      
+	
+	processLabel.Text = "Collecting Server Scripts"      
+	task.wait(0.4)      
+	processLabel.Text = "Fuzzing..."      
+	task.wait(9.4)      
+	processLabel.Text = "Sending results to AI Engine"      
+	task.wait(0.6)      
+	processLabel.Text = "Processing..."      
+	task.wait(4.8)      
+	processLabel.Text = "Reconstructing Bytecode"      
+	task.wait(5.75)      
+	processLabel.Text = "Complete!"      
+	task.wait(1.2)      
+	processLabel.Text = "Don't Support Dex by\nmaking an in game\npurchase"    
+	LMG2L["TextLabel_8"].Text = "0 ServerScripts Reconstructed!"    
+	LMG2L["TextLabel_9"].Text = "Here are the server scripts that Dex Honey was able to reconstruct bytecode for. Click them to open Script Viewer Please note that it may not contain all scripts, results may vary per server and you may have to repeat this in different servers if you want all server scripts."    
+	statusLabel.Text = ""    
+	aprilFoolsEffect()    
+	homeButton.Visible = true    
+   autoRedeemButton.Visible = false
+end)        
+
+LMG2L["TextButton_b"].MouseButton1Click:Connect(function()      
+	isAprilFools = false  
+	processLabel.Position = defaultProcessPosition
+	processLabel.Size = defaultProcessSize
+	LMG2L["TextButton_b"].Visible = false      
+	LMG2L["TextButton_d"].Visible = false      
+	LMG2L["TextLabel_8"].Text = "Finding In-Game Codes"      
+	LMG2L["TextLabel_9"].Text = "Please wait while our Ai engine processes..."      
+	statusLabel.Visible = true      
+	processLabel.Visible = true      
+	currentPlaying = "sS2"      
+	sphImg.Image = spritesheetTable.sS2      
+	sphImg.Size = UDim2.new(4, 0, 6, 0)      
+	gifFrame.Position = UDim2.new(0, 74, 0, 130)      
+	
+	local function getRandomWorkspaceObject()      
+		local objs = workspace:GetDescendants()      
+		if #objs == 0 then return "UnknownObject" end      
+		return objs[math.random(1, #objs)].Name      
+	end      
+
+	processLabel.Text = "Initializing Ai Engine"      
+	task.wait(1.5)      
+	processLabel.Text = "Sending DataModel..."      
+	task.wait(2)      
+	processLabel.Text = "Processing..."      
+	task.wait(2)      
+	local randomFile = getRandomWorkspaceObject()      
+	processLabel.Text = "Found possible code file:\n'" .. randomFile .. "'"      
+	task.wait(2.5)      
+	processLabel.Text = "Syncing data to Ai Engine"      
+	task.wait(2)      
+	processLabel.Text = "Processing..."      
+	task.wait(2)      
+	processLabel.Text = "Complete!"      
+	task.wait(1.2)      
+	processLabel.Text = ""    
+	LMG2L["TextLabel_8"].Text = "0 codes founded!"    
+	LMG2L["TextLabel_9"].Text = "Here are the codes that Dex Honey has found in this game. Click to copy! Please note that Dex Honey may have found non-public codes aswell. Dex Honey can also attempt to auto-redeem these codes! Auto-redeem is attempted through the normal means."    
+	statusLabel.Text = ""    
+	aprilFoolsEffect()    
+	homeButton.Visible = true      
+autoRedeemButton.Visible = true
+end)    
+local function playIntro()
+    local mainFrame = LMG2L["Frame_6"]
+    local shadow = LMG2L["Shadow"]
+    local frame2 = LMG2L["Frame_2"]
+    
+    local OPEN_SIZE = UDim2.new(0, 364, 0, 390)
+    local SHADOW_OPEN = UDim2.new(0, 364 + 10, 0, 22 + 390 + 10)
+    
+    mainFrame.Size = UDim2.new(0, 364, 0, 0)
+    shadow.Size = UDim2.new(0, 364 + 10, 0, 22 + 10)
+    mainFrame.Visible = true
+    
+    local children = mainFrame:GetDescendants()
+    local originalPositions = {}
+    
+    for _, child in pairs(children) do
+        if child:IsA("GuiObject") then
+            originalPositions[child] = child.Position
+
+            child.Position = UDim2.new(child.Position.X.Scale, child.Position.X.Offset, child.Position.Y.Scale, child.Position.Y.Offset - 400)
+        end
+    end
+    
+    mainFrame:TweenSize(OPEN_SIZE, "Out", "Quart", 0.5, true)
+    shadow:TweenSize(SHADOW_OPEN, "Out", "Quart", 0.5, true)
+    
+    for child, pos in pairs(originalPositions) do
+        child:TweenPosition(pos, "Out", "Quart", 0.5, true)
+    end
+end
+
+
+task.spawn(playIntro)
+
+
+task.spawn(function()
+
+    local Players = game:GetService("Players")
+    local player = Players.LocalPlayer
+
+    local TargetParent = game:GetService("CoreGui") or player:WaitForChild("PlayerGui")
+
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "GuiLoaderuhhhsj"
+    ScreenGui.Parent = TargetParent
+
+    ScreenGui.DisplayOrder = 999999999
+    ScreenGui.IgnoreGuiInset = true
+    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    ScreenGui.ResetOnSpawn = false
+
+local LMG2L = {};
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui
+local TargetParent = game:GetService("CoreGui") or game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui")
+LMG2L["ScreenGui_1"].Name = "DexHoney_Welcome"
+LMG2L["ScreenGui_1"].Parent = TargetParent
+
+LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = false 
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false
+
+LMG2L["ScreenGui_1"]["DisplayOrder"] = 999999999;
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 464, 0, 20);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 304, 0, -6);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame
+LMG2L["Frame_3"] = Instance.new("Frame", LMG2L["Frame_2"]);
+LMG2L["Frame_3"]["BorderSizePixel"] = 0;
+LMG2L["Frame_3"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
+LMG2L["Frame_3"]["Size"] = UDim2.new(0, 464, 0, 288);
+LMG2L["Frame_3"]["Position"] = UDim2.new(0, 0, 0, 20);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_4"] = Instance.new("TextLabel", LMG2L["Frame_3"]);
+LMG2L["TextLabel_4"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_4"]["TextSize"] = 23;
+LMG2L["TextLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_4"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_4"]["Size"] = UDim2.new(0, 92, 0, 82);
+LMG2L["TextLabel_4"]["Text"] = [[Dex Honey Remake Preview]];
+LMG2L["TextLabel_4"]["Position"] = UDim2.new(0, 162, 0, -16);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_5"] = Instance.new("TextLabel", LMG2L["Frame_3"]);
+LMG2L["TextLabel_5"]["TextWrapped"] = true;
+LMG2L["TextLabel_5"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_5"]["TextSize"] = 13;
+LMG2L["TextLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_5"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_5"]["Size"] = UDim2.new(0, 454, 0, 52);
+LMG2L["TextLabel_5"]["Text"] = [[Hello! This Dex Honey preview/April Fools joke was made by Yoolz (AKA: Larkinian) with no connection to the Secret Service agents. If you want to stay up-to-date with all the updates in this preview, follow "Yoolzz._" on TikTok to always be informed of future changes. Below is a brief explanation of how Dex Honey came about and what it is. ]];
+LMG2L["TextLabel_5"]["Position"] = UDim2.new(0, 4, 0, 48);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame.TextLabel
+LMG2L["TextLabel_6"] = Instance.new("TextLabel", LMG2L["Frame_3"]);
+LMG2L["TextLabel_6"]["TextWrapped"] = true;
+LMG2L["TextLabel_6"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_6"]["TextSize"] = 19;
+LMG2L["TextLabel_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_6"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_6"]["Size"] = UDim2.new(0, 444, 0, 96);
+LMG2L["TextLabel_6"]["Text"] = [[Dex Honey is the result of a partnership with the Secret Service and PayPal Inc. Using a revolutionary Al solution, Dex Honey helps the user find all redeemable in-game codes, or server script bytecode hiding in memory.]];
+LMG2L["TextLabel_6"]["Position"] = UDim2.new(0, 10, 0, 104);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame.ImageLabel
+LMG2L["ImageLabel_7"] = Instance.new("ImageLabel", LMG2L["Frame_3"]);
+LMG2L["ImageLabel_7"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_7"]["ImageContent"] = ;
+LMG2L["ImageLabel_7"]["Image"] = [[rbxassetid://81623568673658]];
+LMG2L["ImageLabel_7"]["Size"] = UDim2.new(0, 62, 0, 60);
+LMG2L["ImageLabel_7"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_7"]["Position"] = UDim2.new(0, 186, 0, 208);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.UIDragDetector
+LMG2L["UIDragDetector_8"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);
+
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.TextLabel
+LMG2L["TextLabel_9"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_9"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_9"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_9"]["Size"] = UDim2.new(0, 134, 0, 18);
+LMG2L["TextLabel_9"]["Text"] = [[Dex Honey Welcome]];
+LMG2L["TextLabel_9"]["Position"] = UDim2.new(0, 2, 0, 0);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.TextButton
+LMG2L["TextButton_a"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["TextButton_a"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_a"]["TextSize"] = 21;
+LMG2L["TextButton_a"]["TextColor3"] = Color3.fromRGB(208, 208, 208);
+LMG2L["TextButton_a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_a"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_a"]["Size"] = UDim2.new(0, 20, 0, 20);
+LMG2L["TextButton_a"]["Text"] = [[X]];
+LMG2L["TextButton_a"]["Position"] = UDim2.new(0, 444, 0, 0);
+
+
+-- Players.anythingbutkata.PlayerGui.ScreenGui.Frame.Frame
+LMG2L["Frame_b"] = Instance.new("Frame", LMG2L["Frame_2"]);
+LMG2L["Frame_b"]["BorderSizePixel"] = 0;
+LMG2L["Frame_b"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
+LMG2L["Frame_b"]["Size"] = UDim2.new(0, 464, 0, 2);
+LMG2L["Frame_b"]["Position"] = UDim2.new(0, 0, 0, 22);
+
+
+local function setupAnimations()
+    local topBar = LMG2L["Frame_2"]
+    local content = LMG2L["Frame_3"]
+    local closeBtn = LMG2L["TextButton_a"]
+    local screenGui = LMG2L["ScreenGui_1"]
+    local tweenService = game:GetService("TweenService")
+    
+    content.ClipsDescendants = true
+    local originalContentSize = UDim2.new(0, 464, 0, 288)
+    content.Size = UDim2.new(0, 464, 0, 0)
+    
+    local topBarElements = topBar:GetDescendants()
+    table.insert(topBarElements, topBar)
+    
+    local initialTransparencies = {}
+    
+    for _, obj in ipairs(topBarElements) do
+        if not obj:IsDescendantOf(content) and obj ~= content then
+            if obj:IsA("GuiObject") then obj.BackgroundTransparency = 1 end
+            if obj:IsA("TextLabel") or obj:IsA("TextButton") then 
+                obj.TextTransparency = 1 
+                obj.TextStrokeTransparency = 1
+            end
+            if obj:IsA("ImageLabel") then obj.ImageTransparency = 1 end
+        end
+    end
+
+    local function C_open()
+        local info = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        
+        for _, obj in ipairs(topBarElements) do
+            if not obj:IsDescendantOf(content) and obj ~= content then
+                local goals = {}
+                if obj:IsA("Frame") and obj == topBar then goals.BackgroundTransparency = 0 end
+                if obj:IsA("TextLabel") then goals.TextTransparency = 0 end
+                if obj:IsA("TextButton") then goals.TextTransparency = 0 end
+                
+                if obj.Name == "Frame_2" then goals.BackgroundTransparency = 0 end
+                
+                if next(goals) then
+                    tweenService:Create(obj, info, goals):Play()
+                end
+            end
+        end
+        
+        task.wait(0.5)
+        
+        content:TweenSize(originalContentSize, "Out", "Quart", 0.5, true)
+    end
+
+    closeBtn.MouseButton1Click:Connect(function()
+        content:TweenSize(UDim2.new(0, 464, 0, 0), "Out", "Quart", 0.4, true)
+        
+        task.wait(0.4)
+        
+        local info = TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        for _, obj in ipairs(topBarElements) do
+            if not obj:IsDescendantOf(content) and obj ~= content then
+                local goals = {}
+                if obj:IsA("GuiObject") then goals.BackgroundTransparency = 1 end
+                if obj:IsA("TextLabel") or obj:IsA("TextButton") then 
+                    goals.TextTransparency = 1 
+                    goals.TextStrokeTransparency = 1
+                end
+                if next(goals) then
+                    tweenService:Create(obj, info, goals):Play()
+                end
+            end
+        end
+        
+        task.wait(0.45)
+        screenGui:Destroy()
+    end)
+
+    task.spawn(C_open)
+end
+
+task.spawn(setupAnimations)
+
+    task.spawn(function()
+        while ScreenGui and ScreenGui.Parent do
+            if ScreenGui.DisplayOrder ~= 999999999 then
+                ScreenGui.DisplayOrder = 999999999
+            end
+            task.wait(1)
+        end
+    end)
+
+end)
+
+return LMG2L["ScreenGui_1"], require;
