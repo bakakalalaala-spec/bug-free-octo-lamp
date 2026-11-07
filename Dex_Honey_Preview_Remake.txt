@@ -89,7 +89,7 @@ LMG2L["TextLabel_3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["TextLabel_3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["TextLabel_3"]["BackgroundTransparency"] = 1;
 LMG2L["TextLabel_3"]["Size"] = UDim2.new(0, 64, 0, 22);
-LMG2L["TextLabel_3"]["Text"] = [[DexHoney]];
+LMG2L["TextLabel_3"]["Text"] = [[Dex Honey]];
 
 
 -- Players.007y7z.PlayerGui.ScreenGui.Frame.TextButton
@@ -145,7 +145,7 @@ LMG2L["TextLabel_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["TextLabel_8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["TextLabel_8"]["BackgroundTransparency"] = 1;
 LMG2L["TextLabel_8"]["Size"] = UDim2.new(0.2, 0, 0.3, 0);
-LMG2L["TextLabel_8"]["Text"] = [[Welcome to Dex, Honey]];
+LMG2L["TextLabel_8"]["Text"] = [[Welcome to Dex Honey!]];
 LMG2L["TextLabel_8"]["Position"] = UDim2.new(0, 136, 0, 12);
 LMG2L["TextLabel_8"]["FontFace"] = Font.new(
     "rbxasset://fonts/families/SourceSansPro.json",
@@ -225,7 +225,7 @@ LMG2L["TextButton_d"]["FontFace"] = Font.new(
     Enum.FontStyle.Normal
 )
 LMG2L["TextButton_d"]["Size"] = UDim2.new(0, 220, 0, 32);
-LMG2L["TextButton_d"]["Text"] = [[Find Server Script ByteCode]];
+LMG2L["TextButton_d"]["Text"] = [[Find Server Script Bytecode]];
 LMG2L["TextButton_d"]["Position"] = UDim2.new(0, 58, 0, 326);
 
 
@@ -632,7 +632,7 @@ LMG2L["TextButton_d"].MouseButton1Click:Connect(function()
 	LMG2L["TextButton_b"].Visible = false      
 	LMG2L["TextButton_d"].Visible = false      
 	LMG2L["TextLabel_8"].Text = "Finding Server Scripts Bytecode"      
-	LMG2L["TextLabel_9"].Text = "We will now retrieve a certain amount of available server memory using our 0day memory reading method before processing it with our AI engine to find traces of server script bytecode."      
+	LMG2L["TextLabel_9"].Text = "We will now retrieve a certain amount of available server memory using our 0 day memory reading method before processing it with our AI engine to find traces of server script bytecode."      
 	statusLabel.Visible = true      
 	processLabel.Visible = true      
 	currentPlaying = "sS2"      
@@ -652,8 +652,8 @@ LMG2L["TextButton_d"].MouseButton1Click:Connect(function()
 	task.wait(5.75)      
 	processLabel.Text = "Complete!"      
 	task.wait(1.2)      
-	processLabel.Text = "Don't Support Dex by\nmaking an in game\npurchase"    
-	LMG2L["TextLabel_8"].Text = "0 ServerScripts Reconstructed!"    
+	processLabel.Text = "Support Dex by\nmaking an in game\npurchase."    
+	LMG2L["TextLabel_8"].Text = "4 ServerScripts Reconstructed!"    
 	LMG2L["TextLabel_9"].Text = "Here are the server scripts that Dex Honey was able to reconstruct bytecode for. Click them to open Script Viewer Please note that it may not contain all scripts, results may vary per server and you may have to repeat this in different servers if you want all server scripts."    
 	statusLabel.Text = ""    
 	aprilFoolsEffect()    
@@ -682,7 +682,7 @@ LMG2L["TextButton_b"].MouseButton1Click:Connect(function()
 		return objs[math.random(1, #objs)].Name      
 	end      
 
-	processLabel.Text = "Initializing Ai Engine"      
+	processLabel.Text = "Initializing AI Engine"      
 	task.wait(1.5)      
 	processLabel.Text = "Sending DataModel..."      
 	task.wait(2)      
@@ -691,14 +691,14 @@ LMG2L["TextButton_b"].MouseButton1Click:Connect(function()
 	local randomFile = getRandomWorkspaceObject()      
 	processLabel.Text = "Found possible code file:\n'" .. randomFile .. "'"      
 	task.wait(2.5)      
-	processLabel.Text = "Syncing data to Ai Engine"      
+	processLabel.Text = "Syncing data to AI Engine"      
 	task.wait(2)      
 	processLabel.Text = "Processing..."      
 	task.wait(2)      
 	processLabel.Text = "Complete!"      
 	task.wait(1.2)      
 	processLabel.Text = ""    
-	LMG2L["TextLabel_8"].Text = "0 codes founded!"    
+	LMG2L["TextLabel_8"].Text = "1 code found!"    
 	LMG2L["TextLabel_9"].Text = "Here are the codes that Dex Honey has found in this game. Click to copy! Please note that Dex Honey may have found non-public codes aswell. Dex Honey can also attempt to auto-redeem these codes! Auto-redeem is attempted through the normal means."    
 	statusLabel.Text = ""    
 	aprilFoolsEffect()    
